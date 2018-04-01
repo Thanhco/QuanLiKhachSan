@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 22, 2018, 11:00:38 PM
+    Author     : Sony Vaio
+*/
+.textHeader{
+    -fx-font: "Roboto Bold";
+    -fx-fill: #0052cc;
+    -fx-stroke: #ffff1a;
+    -fx-stroke-width: 2;
+}
+.Header{
+    -fx-background-color:  #99b3ff;
+}
+.Left{
+    -fx-background-color:  #99b3ff;
+}
+.Footer{
+    -fx-background-color:  #99b3ff;
+}
+.lblNameNV{
+    -fx-font: "Roboto Bold";
+}
+.nav-btnmenu{
+    -fx-background-color:#2A3F54;
+    -fx-font: "Roboto Bold";
+    -fx-text-fill: "White";
+    
+}
+.nav-btnmenu:hover{
+    -fx-background-color:#222D32;
+}
+.nav-btnmenu:pressed {
+    -fx-background-color:#2A3F54;
+}
+.PaneStatus{
+    -fx-background-color: #99b3ff;  
+}
+.PaneUpDatePrice{
+    -fx-background-color: #cccc00;  
+}
+/* 
+    Created on : Mar 19, 2018, 2:35:34 PM
+    Author     : Erick
+*/
+
+.AnchorPane_login {
+    -fx-background-color: #99b3ff;
+    -fx-border-top: 2px solid blue;
+}
+.tfLogin {
+    -fx-font-size: 15;
+}
+PasswordField {
+}
+.btnLogin {
+    -fx-background-color: #2A2E37;
+    -fx-text-fill: #B2B2B2;
+    -fx-border-width: 2px;
+    -fx-border-color: royalblue;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 15;
+}
+.btnLogin:hover {
+    -fx-background-color: royalblue;
+}
+
