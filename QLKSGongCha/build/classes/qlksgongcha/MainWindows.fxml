@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0" prefWidth="1360.0" stylesheets="@StyleCustom.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qlksgongcha.MainWindowsController">
+    <children>
+        <BorderPane layoutX="-2.0" prefHeight="681.0" prefWidth="1360.0" stylesheets="@StyleCustom.css">
+            <top>                   
+            </top>
+         <center>
+            <VBox prefHeight="744.0" prefWidth="1160.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="mainPane" prefHeight="548.0" prefWidth="940.0" />
+                  <Pane prefHeight="36.0" prefWidth="940.0" styleClass="Footer">
+                     <children>
+                        <Text layoutX="2.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2018 Thành Có (1451010018) - Tăng Hào (1451010045)" textAlignment="CENTER" wrappingWidth="936.255859375">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children></VBox>
+         </center>
+         <top>
+            <Pane prefHeight="97.0" prefWidth="1360.0" styleClass="Header" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="204.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textHeader" text="HỆ THỐNG QUẢN LÍ KHÁCH SẠN GONG CHA" textAlignment="CENTER" wrappingWidth="1155.30078125">
+                     <font>
+                        <Font size="47.0" />
+                     </font></Text>
+                  <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="52.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="580.0" prefWidth="209.0" styleClass="Left" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="133.0" layoutX="35.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/avatar.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="13.0" layoutY="191.0" mnemonicParsing="false" onAction="#switchListRoom" prefHeight="25.0" prefWidth="180.0" styleClass="nav-btnmenu" text="Danh mục Phòng">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Label alignment="CENTER" layoutX="13.0" layoutY="139.0" styleClass="lblNameNV" text="NV:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblName" alignment="CENTER" layoutX="51.0" layoutY="139.0" prefHeight="27.0" prefWidth="154.0" styleClass="lblNameNV" text="Lê Thành Có">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnKhachHang" layoutX="12.0" layoutY="280.0" mnemonicParsing="false" onAction="#switchCustomer" prefHeight="25.0" prefWidth="180.0" styleClass="nav-btnmenu" text="Danh sách Khách Hàng">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Button layoutX="12.0" layoutY="522.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" text="Đăng Xuất">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Button layoutX="12.0" layoutY="235.0" mnemonicParsing="false" onAction="#switchPriceRoom" prefHeight="25.0" prefWidth="180.0" styleClass="nav-btnmenu" text="Xem Giá Phòng">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnKhachHang1" layoutX="12.0" layoutY="327.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" styleClass="nav-btnmenu" text="Báo Cáo">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </left>
+         <right>
+            <Pane prefHeight="663.0" prefWidth="211.0" BorderPane.alignment="CENTER">
+               <children>
+                  <DatePicker layoutX="7.0" layoutY="28.0" />
+               </children>
+            </Pane>
+         </right>
+        </BorderPane>
+    </children>
+</AnchorPane>

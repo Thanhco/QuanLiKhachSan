@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="951.0" stylesheets="@StyleCustom.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qlksgongcha.UpdatePriceRoomController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="20.0" prefHeight="548.0" prefWidth="940.0">
+         <children>
+            <Button layoutX="771.0" layoutY="-15.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="155.0" styleClass="nav-btnmenu" text="Xem Giá Phòng">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Separator layoutY="27.0" prefHeight="6.0" prefWidth="930.0" />
+            <Label layoutX="14.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Giá Phòng" />
+            <VBox layoutY="54.0" prefHeight="461.0" prefWidth="930.0">
+               <children>
+                  <HBox prefHeight="127.0" prefWidth="1164.0" spacing="16.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PanePrice">
+                           <children>
+                              <VBox prefHeight="127.0" prefWidth="173.0" style="-fx-effect: dropshadow;" styleClass="PaneUpDatePrice" stylesheets="@StyleCustom.css">
+                                 <children>
+                                    <Label fx:id="tt101" prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="101" />
+                                    <Label fx:id="lbl101H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl101D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="102" />
+                                    <Label fx:id="lbl102H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl102D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="103" />
+                                    <Label fx:id="lbl103H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl103D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="104" />
+                                    <Label fx:id="lbl104H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl104D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="105" />
+                                    <Label fx:id="lbl105H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl105D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="27.0" prefWidth="930.0" />
+                  <HBox prefHeight="127.0" prefWidth="1164.0" spacing="16.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="201" />
+                                    <Label fx:id="lbl201H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl201D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="202" />
+                                    <Label fx:id="lbl202H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl202D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="203" />
+                                    <Label fx:id="lbl203H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl203D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="204" />
+                                    <Label fx:id="lbl204H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl204D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="205" />
+                                    <Label fx:id="lbl205H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl205D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="27.0" prefWidth="930.0" />
+                  <HBox prefHeight="127.0" prefWidth="1164.0" spacing="16.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="301" />
+                                    <Label fx:id="lbl301H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl301D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="302" />
+                                    <Label fx:id="lbl302H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl302D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="303" />
+                                    <Label fx:id="lbl303H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl303D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="304" />
+                                    <Label fx:id="lbl304H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl304D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneUpDatePrice">
+                           <children>
+                              <VBox prefHeight="102.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="305" />
+                                    <Label fx:id="lbl305H" prefHeight="25.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Giờ: 70000 Đ" />
+                                    <Label fx:id="lbl305D" prefHeight="25.0" prefWidth="159.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Giá Ngày: 250000 Đ" />
+                                    <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" text="Cập nhật">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/fix.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

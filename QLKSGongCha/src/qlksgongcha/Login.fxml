@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="qlksgongcha.LoginController">
+   <children>
+      <AnchorPane fx:id="anchorPane_login" prefHeight="417.0" prefWidth="400.0" styleClass="AnchorPane_login" stylesheets="@StyleCustom.css">
+         <children>
+            <TextField fx:id="txtUserName" blendMode="LIGHTEN" layoutX="50.0" layoutY="179.0" prefHeight="50.0" prefWidth="299.0" promptText="Tên người dùng" styleClass="tfLogin" />
+            <PasswordField fx:id="txtPassWord" layoutX="50.0" layoutY="254.0" prefHeight="50.0" prefWidth="299.0" promptText="Mật khẩu" styleClass="tfLogin" />
+            <Button layoutX="50.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnCancelLoginAction" prefHeight="40.0" prefWidth="125.0" styleClass="btnLogin" text="Thoát">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="49.0" layoutX="301.0" layoutY="179.0" pickOnBounds="true" styleClass="userIcon">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="49.0" layoutX="301.0" layoutY="254.0" pickOnBounds="true" styleClass="passWordIcon">
+               <image>
+                  <Image url="@../images/key-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="150.0" layoutX="143.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hotel.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLogin" layoutX="225.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="40.0" prefWidth="125.0" styleClass="btnLogin" text="Đăng nhập">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

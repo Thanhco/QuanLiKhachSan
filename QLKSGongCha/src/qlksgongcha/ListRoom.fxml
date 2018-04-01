@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="940.0" stylesheets="@StyleCustom.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="541.0" prefWidth="940.0">
+         <children>
+            <Separator layoutY="27.0" prefHeight="6.0" prefWidth="930.0" />
+            <Label layoutY="-1.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Danh sách Phòng" />
+            <VBox layoutY="54.0" prefHeight="461.0" prefWidth="930.0">
+               <children>
+                  <HBox prefHeight="127.0" prefWidth="1164.0" spacing="16.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="101" />
+                                    <Label fx:id="lblStatus" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus2" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook1" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="102" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus11" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus21" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook111" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="103" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus12" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus22" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook112" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="104" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus13" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus23" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook113" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="105" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus14" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus24" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook114" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="27.0" prefWidth="930.0" />
+                  <HBox prefHeight="127.0" prefWidth="1164.0" spacing="16.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="201" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus15" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus25" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook115" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="202" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus16" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus26" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook116" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="203" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus17" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus27" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook117" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="204" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus18" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus28" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook118" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="205" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus19" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus29" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook119" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="27.0" prefWidth="930.0" />
+                  <HBox prefHeight="127.0" prefWidth="1164.0" spacing="16.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="301" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus110" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus210" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook1110" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="302" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus111" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus211" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook1111" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="303" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus112" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus212" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook1112" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="304" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus113" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus213" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook1113" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="180.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" styleClass="PaneStatus">
+                           <children>
+                              <VBox prefHeight="96.0" prefWidth="173.0">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="64.0" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: white;" text="305" />
+                                    <Label fx:id="lblStatus1" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Sẵn Sàng" />
+                                    <Label fx:id="lblStatus114" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Tg.Đến: " />
+                                    <Label fx:id="lblStatus214" prefHeight="61.0" prefWidth="178.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="Ngày:" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="btnBook1" layoutX="6.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" styleClass="btnBook" text="Book">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook11" layoutX="91.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Pay">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBook1114" layoutX="109.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Update">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox layoutX="-1.0" layoutY="515.0" prefHeight="25.0" prefWidth="930.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #00C0EF;" />
+                        <Pane prefHeight="26.0" prefWidth="20.0" />
+                        <Label prefHeight="26.0" prefWidth="120.0" text="Sẵn sàng">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #ffff00;" />
+                        <Pane prefHeight="26.0" prefWidth="20.0" />
+                        <Label prefHeight="26.0" prefWidth="120.0" text="Đang Dọn Dẹp">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #ff3300;" />
+                        <Pane prefHeight="26.0" prefWidth="20.0" />
+                        <Label prefHeight="26.0" prefWidth="120.0" text="Có Khách">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #00ff00;" />
+                        <Pane prefHeight="26.0" prefWidth="20.0" />
+                        <Label prefHeight="26.0" prefWidth="120.0" text="Đã Đặt Trước">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #000099;" />
+                        <Pane prefHeight="26.0" prefWidth="20.0" />
+                        <Label prefHeight="26.0" prefWidth="120.0" text="Đang Sửa Chữa">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
